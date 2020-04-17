@@ -1,0 +1,20 @@
+open Ocamlbuild_plugin
+let () = flag ["ocaml"; "native"; "compile"] (A "-O3")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inlining-report")
+let () = flag ["ocaml"; "native"; "compile"] (A "-unbox-closures")
+
+
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-toplevel")
+let () = flag ["ocaml"; "native"; "compile"] (A "10000")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-alloc-cost")
+let () = flag ["ocaml"; "native"; "compile"] (A "100")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-branch-cost")
+let () = flag ["ocaml"; "native"; "compile"] (A "100")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-call-cost")
+let () = flag ["ocaml"; "native"; "compile"] (A "500")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-indirect-cost")
+let () = flag ["ocaml"; "native"; "compile"] (A "500")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-prim-cost")
+let () = flag ["ocaml"; "native"; "compile"] (A "100")
+let () = flag ["ocaml"; "native"; "compile"] (A "-inline-max-depth")
+let () = flag ["ocaml"; "native"; "compile"] (A "10")
